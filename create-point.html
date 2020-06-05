@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Cadastro de partitura | Musicpoint</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/create-point.css">
+    <link rel="stylesheet" href="/styles/responsive.css">
+</head>
+<body>
+    <div id="page-create-point">
+        <header>
+            <img src="/assets/logo.png" alt="Logomarca">
+            
+            <a href="/index.html">
+                <span></span>
+                Voltar para home
+            </a>
+        </header>
+
+        <form action="">
+            <h1>Cadastro da partitura</h1>
+
+            <fieldset>
+                <legend>
+                    <h2>Dados da partitura</h2>
+                </legend>
+
+                <div class="field">
+                    <label for="title">Título</label>
+                    <input type="text" name="title" placeholder="Título da partitura" required>
+                </div>
+
+                <div class="field-group">
+                    <div class="field">
+                        <label for="subtitle">Subtítulo</label>
+                        <input type="text" name="subtitle" placeholder="Subtítulo da partitura" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="songwriter">Compositor</label>
+                        <input type="text" name="songwriter" placeholder="Compositor da partitura" required>
+                    </div>
+                </div>
+
+                <div class="field-group">
+                    <div class="field">
+                        <label for="lyricist">Letrista</label>
+                        <input type="text" name="lyricist" placeholder="Letrista da partitura" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="copyright">Direitos Autorais</label>
+                        <input type="text" name="copyright" placeholder="Direitos autorais sobre a partitura" required>
+                    </div>
+                </div>
+
+                <div class="field-group">
+                    <div class="field">
+                        <label for="state">Estado</label>
+                        <select name="uf" required>
+                            <option value="">Selecione o Estado</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="city">Cidade</label>
+                        <select name="city" disabled required>
+                            <option value="">Selecione a Cidade</option>
+                        </select>
+
+                        <input type="hidden" name="state">
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h2>Instrumentos utilizados</h2>
+                </legend>
+
+                <div class="items-grid">
+                    <li data-id="1">
+                        <img src="https://img.icons8.com/color/96/000000/violin.png" alt="Violino"/>
+                        <span>Violino</span>
+                    </li>
+                    
+                    <li data-id="2">
+                        <img src="https://img.icons8.com/color/96/000000/violin.png" alt="Viola"/>
+                        <span>Viola</span>
+                    </li>
+
+                    <li data-id="3">
+                        <img src="https://img.icons8.com/color/96/000000/cello.png" alt="Violoncelo"/>
+                        <span>Violoncelo</span>
+                    </li>
+
+                    <li data-id="4">
+                        <img src="https://img.icons8.com/ios-filled/70/000000/grand-piano.png" alt="Piano"/>
+                        <span>Piano</span>
+                    </li>
+
+                    <li data-id="5">
+                        <img src="https://img.icons8.com/color/80/000000/flute.png" alt="Flauta"/>
+                        <span>Flauta</span>
+                    </li>
+
+                    <li data-id="6" id="item-6">
+                        <img src="https://img.icons8.com/ios-glyphs/40/000000/ellipsis.png" alt="Outro"/>
+                        <span>Outro</span>
+                    </li>
+                </div>
+
+                <input type="hidden" name="items"/>
+            </fieldset>
+
+            <button type="submit">Cadastrar partitura</button>
+        </form>
+    </div>
+
+
+    <script src="/scripts/create-point.js"></script>
+</body>
+</html>

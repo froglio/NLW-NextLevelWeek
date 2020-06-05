@@ -1,0 +1,44 @@
+@media (max-width: 1004px) {
+    #page-home {
+        background-position-x: 71vw;
+    }
+
+    #page-home .content {
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-home header a {
+        position: absolute;
+        bottom: 48px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #page-home main {
+        align-items: center;
+    }
+
+    #page-search-results .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 690px) {
+    #page-home {
+        background-position-x: 78vw;
+    }
+}
+
+@media (max-height: 615px) {
+    #page-home {
+        background-position-y: 5vw;
+    }
+}
+
+@media (max-width: 530px) {
+    #page-search-results .cards {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
