@@ -1,2 +1,2 @@
-# NLW-NextLevelWeek-Project
+# https://froglio.github.io/NLW-NextLevelWeek-Project/index.html
 O NLW (Next Level Week) é um projeto da Rocketseat com o objetivo de ensinar uma determinada tecnologia em apenas uma semana. Como o nome diz, em uma semana você vai para o próximo nível! Eu queria fazer algo diferente ao invés de apenas "copiar" o código, acredito que modificando da minha forma terei um aprendizado melhor. Então troquei o tema do site de Ecoleta para Musicpoint. Foi uma ideia que tive para que pessoas possam cadastrar partituras musicais e/ou ver partituras já cadastradas, de forma simples e rápida.
